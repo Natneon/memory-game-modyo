@@ -1,0 +1,111 @@
+.game-over {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bye-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  background-color:#9ee9f2d4;
+}
+
+.bye-box .title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.bye-box .subtitle {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bye-box .score-summary {
+  margin-bottom: 30px;
+}
+
+.bye-box .score-summary p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.bye-box .correct {
+  color: #4caf50;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.bye-box .error {
+  color: #f44336;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.play-again-button,
+.exit-button {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.play-again-button {
+  background-color: #9c27b0;
+}
+
+.play-again-button:hover {
+  background-color: #7b1fa2;
+}
+
+.exit-button {
+  background-color: #f44336;
+}
+
+.exit-button:hover {
+  background-color: #5c1919;
+}
+
+
+@media (max-width: 480px) {
+  .bye-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .play-again-button,
+  .exit-button {
+    width: 100%;
+}
+}
