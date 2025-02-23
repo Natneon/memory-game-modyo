@@ -7,10 +7,17 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencias y builds
 node_modules
 dist
 dist-ssr
 *.local
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.production
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +29,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Archivos de caché y temporales
+.cache
+.temp
+.tmp
+
+# Configuraciones personalizadas
+config.local.json
